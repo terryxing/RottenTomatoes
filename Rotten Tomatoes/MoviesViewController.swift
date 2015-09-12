@@ -15,6 +15,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
   
    var movies: [NSDictionary]?
   
+   var refreshControl:UIRefreshControl!
+
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -40,6 +42,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
         //print(self.movies)
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(self.refreshControl)
+
 
       }
   
@@ -65,6 +73,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     
   }
+  
+  func refresh(sender:AnyObject)
+  {
+    
+    
+    
+    self.refreshControl.endRefreshing()
+    
+  }
+  
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if let movies = movies {
