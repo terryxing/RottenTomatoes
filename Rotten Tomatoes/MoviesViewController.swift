@@ -8,6 +8,9 @@
 
 import UIKit
 import AFNetworking
+import SwiftLoader
+import Darwin
+
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -19,6 +22,17 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      var config : SwiftLoader.Config = SwiftLoader.Config()
+      //config.size = 150
+      config.backgroundColor = UIColor.grayColor()
+      config.spinnerColor = UIColor.whiteColor()
+      SwiftLoader.setConfig(config)
+
+      SwiftLoader.show(title: "Loading...", animated: true)
+     
+
+      
       
       self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
       self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -39,8 +53,22 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         //  NSLog("response: \(self.photos)")
         
         
+        
+        if(responseDictionary == nil) {
+          
+          let alert = UIAlertView()
+          alert.title = "Error"
+          alert.message = "No Network Connection"
+          alert.addButtonWithTitle("OK")
+          alert.show()
+
+        }
+        
+        
         if let json = responseDictionary {
           self.movies = json["movies"] as? [NSDictionary]
+          sleep(1)
+          SwiftLoader.hide()
           self.tableView.reloadData()
         }
         
@@ -51,15 +79,34 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(self.refreshControl)
 
-
+        
+        
       }
   
      }
  
   
+  
+  func tableView(tableView: UITableView,
+    willDisplayCell cell: UITableViewCell,
+    forRowAtIndexPath indexPath: NSIndexPath) {
+      
+      if cell.respondsToSelector("setSeparatorInset:") {
+        cell.separatorInset = UIEdgeInsetsZero
+      }
+      if cell.respondsToSelector("setLayoutMargins:") {
+        cell.layoutMargins = UIEdgeInsetsZero
+      }
+      if cell.respondsToSelector("setPreservesSuperviewLayoutMargins:") {
+        cell.preservesSuperviewLayoutMargins = false
+      }
+  }
+  
+  
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
    
+    //cell.layoutMargins = UIEdgeInsetsZero
     
     let movie = self.movies![indexPath.row]
     
@@ -71,16 +118,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     cell.posterView.setImageWithURL(url)
     return cell
-    
-    
-    
-    
+   
   }
   
   func refresh(sender:AnyObject)
   {
     
     
+      let alert = UIAlertView()
+      alert.title = "Error"
+      alert.message = "No Network Connection"
+      alert.addButtonWithTitle("OK")
+      alert.show()
+      
+  
     
     self.refreshControl.endRefreshing()
     
