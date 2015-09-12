@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
     </dependencies>
     <scenes>
@@ -45,7 +46,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="posterView" destination="z69-Wc-EhH" id="xsh-Uo-I5K"/>
+                                            <outlet property="posterView" destination="uAj-p7-sLM" id="MBn-qX-Ivd"/>
                                             <outlet property="synopsisLabel" destination="P1T-IS-z4I" id="4dn-kL-fcP"/>
                                             <outlet property="titleLabel" destination="jYS-XP-Qza" id="jXF-cs-ndx"/>
                                         </connections>
