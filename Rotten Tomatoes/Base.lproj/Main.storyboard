@@ -111,6 +111,7 @@
                     <navigationItem key="navigationItem" id="oN6-4v-6UF"/>
                     <connections>
                         <outlet property="imageView" destination="3f2-gx-qAG" id="Mwo-sI-hP7"/>
+                        <outlet property="navBar" destination="oN6-4v-6UF" id="nK4-RD-ZoA"/>
                         <outlet property="synopsisLabel" destination="dXf-m3-YJs" id="2YF-yo-ZnU"/>
                         <outlet property="titleLabel" destination="HoO-MR-VQm" id="ZhO-rs-bXy"/>
                     </connections>

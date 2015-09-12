@@ -10,6 +10,7 @@ import UIKit
 
 class MovieDetailsViewController: UIViewController {
 
+  @IBOutlet weak var navBar: UINavigationItem!
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var synopsisLabel: UILabel!
@@ -25,6 +26,7 @@ class MovieDetailsViewController: UIViewController {
       let url = NSURL(string: movie.valueForKeyPath("posters.thumbnail") as! String)!
       imageView.setImageWithURL(url)
 
+      navBar.title = movie["title"] as? String
       
         // Do any additional setup after loading the view.
     }
