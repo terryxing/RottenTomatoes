@@ -15,6 +15,7 @@
 		370800381BA3CDB60047F2A3 /* Rotten_TomatoesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370800371BA3CDB60047F2A3 /* Rotten_TomatoesUITests.swift */; };
 		370800461BA3CE470047F2A3 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370800451BA3CE470047F2A3 /* MoviesViewController.swift */; };
 		37A6D8FD1BA3F8E100326E3C /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A6D8FC1BA3F8E100326E3C /* MovieDetailsViewController.swift */; };
+		37A6D9011BA407CC00326E3C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A6D9001BA407CC00326E3C /* NavigationController.swift */; };
 		37E4C4A91BA3DCD00093A849 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4C4A81BA3DCD00093A849 /* MovieCell.swift */; };
 		3F662AB8407B995996AC3096 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829767B309BFDBD3CA6F43F3 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		370800391BA3CDB60047F2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370800451BA3CE470047F2A3 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		37A6D8FC1BA3F8E100326E3C /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		37A6D9001BA407CC00326E3C /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		37E4C4A81BA3DCD00093A849 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		829767B309BFDBD3CA6F43F3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 			children = (
 				370800451BA3CE470047F2A3 /* MoviesViewController.swift */,
 				37A6D8FC1BA3F8E100326E3C /* MovieDetailsViewController.swift */,
+				37A6D9001BA407CC00326E3C /* NavigationController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			files = (
 				37A6D8FD1BA3F8E100326E3C /* MovieDetailsViewController.swift in Sources */,
 				370800181BA3CDB60047F2A3 /* AppDelegate.swift in Sources */,
+				37A6D9011BA407CC00326E3C /* NavigationController.swift in Sources */,
 				370800461BA3CE470047F2A3 /* MoviesViewController.swift in Sources */,
 				37E4C4A91BA3DCD00093A849 /* MovieCell.swift in Sources */,
 			);
