@@ -47,7 +47,7 @@ public class SwiftLoader: UIView {
     }
     
     public class func show(title title: String?, animated : Bool) {
-        var currentWindow : UIWindow = UIApplication.sharedApplication().keyWindow!
+        let currentWindow : UIWindow = UIApplication.sharedApplication().keyWindow!
         
         let loader = SwiftLoader.sharedInstance
         loader.canUpdated = true
@@ -169,7 +169,7 @@ public class SwiftLoader: UIView {
     }
     
     required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
     }
     
     /**
@@ -194,7 +194,7 @@ public class SwiftLoader: UIView {
         }
         
         required init(coder aDecoder: NSCoder) {
-            super.init(coder: aDecoder)
+            super.init(coder: aDecoder)!
         }
         
         /**

@@ -32,7 +32,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
       SwiftLoader.show(title: "Loading...", animated: true)
      
 
-      
+      UITabBar.appearance().barTintColor = UIColor.blackColor()
+
       
       self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
       self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
