@@ -23,6 +23,7 @@
 		71D56B061BA62019009CF678 /* iconmonstr-disc-14-icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D56B041BA62019009CF678 /* iconmonstr-disc-14-icon-32.png */; settings = {ASSET_TAGS = (); }; };
 		71D56B0A1BA63457009CF678 /* DvdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D56B091BA63457009CF678 /* DvdCell.swift */; settings = {ASSET_TAGS = (); }; };
 		71D56B121BA64379009CF678 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D56B111BA64379009CF678 /* MyTabBarController.swift */; settings = {ASSET_TAGS = (); }; };
+		71D56B141BA67F4C009CF678 /* iconmonstr-video-3-icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D56B131BA67F4C009CF678 /* iconmonstr-video-3-icon-128.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		71D56B041BA62019009CF678 /* iconmonstr-disc-14-icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-disc-14-icon-32.png"; sourceTree = "<group>"; };
 		71D56B091BA63457009CF678 /* DvdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DvdCell.swift; sourceTree = "<group>"; };
 		71D56B111BA64379009CF678 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		71D56B131BA67F4C009CF678 /* iconmonstr-video-3-icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-video-3-icon-128.png"; sourceTree = "<group>"; };
 		829767B309BFDBD3CA6F43F3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 			children = (
 				71D56B031BA62019009CF678 /* iconmonstr-video-5-icon-32 (1).png */,
 				71D56B041BA62019009CF678 /* iconmonstr-disc-14-icon-32.png */,
+				71D56B131BA67F4C009CF678 /* iconmonstr-video-3-icon-128.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D56B141BA67F4C009CF678 /* iconmonstr-video-3-icon-128.png in Resources */,
 				71D56B061BA62019009CF678 /* iconmonstr-disc-14-icon-32.png in Resources */,
 				370800221BA3CDB60047F2A3 /* LaunchScreen.storyboard in Resources */,
 				71D56B051BA62019009CF678 /* iconmonstr-video-5-icon-32 (1).png in Resources */,
