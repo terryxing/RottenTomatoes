@@ -11,9 +11,15 @@ import UIKit
 class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-      self.navigationBar.barStyle = UIBarStyle.Black
-      self.navigationBar.tintColor = UIColor.whiteColor()
+    
+      super.viewDidLoad()
+        self.navigationBar.barStyle = UIBarStyle.Black
+        self.navigationBar.tintColor = UIColor.orangeColor()
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.orangeColor()]
+
+        
+   
+
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +28,9 @@ class NavigationController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+           }
 
     /*
     // MARK: - Navigation

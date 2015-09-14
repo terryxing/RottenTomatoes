@@ -31,16 +31,13 @@ class DVDsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         SwiftLoader.show(title: "Loading...", animated: true)
         
         
-        UITabBar.appearance().barTintColor = UIColor.blackColor()
-
-        
         self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
         tableView.dataSource = self
         tableView.delegate = self
         
-        let url = NSURL(string: "https://gist.githubusercontent.com/timothy1ee/e41513a57049e21bc6cf/raw/b490e79be2d21818f28614ec933d5d8f467f0a66/gistfile2.json")!
+        let url = NSURL(string: "https://gist.githubusercontent.com/timothy1ee/e41513a57049e21bc6cf/raw/b490e79be2d21818f28614ec933d5d8f467f0a66/gistfile1.json")!
         
         
         let request = NSURLRequest(URL: url)

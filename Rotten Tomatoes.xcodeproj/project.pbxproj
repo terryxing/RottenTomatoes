@@ -22,7 +22,7 @@
 		71D56B051BA62019009CF678 /* iconmonstr-video-5-icon-32 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 71D56B031BA62019009CF678 /* iconmonstr-video-5-icon-32 (1).png */; settings = {ASSET_TAGS = (); }; };
 		71D56B061BA62019009CF678 /* iconmonstr-disc-14-icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D56B041BA62019009CF678 /* iconmonstr-disc-14-icon-32.png */; settings = {ASSET_TAGS = (); }; };
 		71D56B0A1BA63457009CF678 /* DvdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D56B091BA63457009CF678 /* DvdCell.swift */; settings = {ASSET_TAGS = (); }; };
-		71D56B0C1BA63763009CF678 /* MyTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D56B0B1BA63763009CF678 /* MyTabViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		71D56B121BA64379009CF678 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D56B111BA64379009CF678 /* MyTabBarController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 		71D56B031BA62019009CF678 /* iconmonstr-video-5-icon-32 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-video-5-icon-32 (1).png"; sourceTree = "<group>"; };
 		71D56B041BA62019009CF678 /* iconmonstr-disc-14-icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-disc-14-icon-32.png"; sourceTree = "<group>"; };
 		71D56B091BA63457009CF678 /* DvdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DvdCell.swift; sourceTree = "<group>"; };
-		71D56B0B1BA63763009CF678 /* MyTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabViewController.swift; sourceTree = "<group>"; };
+		71D56B111BA64379009CF678 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		829767B309BFDBD3CA6F43F3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,7 +174,7 @@
 				37A6D8FC1BA3F8E100326E3C /* MovieDetailsViewController.swift */,
 				37A6D9001BA407CC00326E3C /* NavigationController.swift */,
 				71D56AFC1BA61BDC009CF678 /* DVDsViewController.swift */,
-				71D56B0B1BA63763009CF678 /* MyTabViewController.swift */,
+				71D56B111BA64379009CF678 /* MyTabBarController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -381,8 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71D56B0C1BA63763009CF678 /* MyTabViewController.swift in Sources */,
 				37A6D8FD1BA3F8E100326E3C /* MovieDetailsViewController.swift in Sources */,
+				71D56B121BA64379009CF678 /* MyTabBarController.swift in Sources */,
 				370800181BA3CDB60047F2A3 /* AppDelegate.swift in Sources */,
 				37A6D9011BA407CC00326E3C /* NavigationController.swift in Sources */,
 				370800461BA3CE470047F2A3 /* MoviesViewController.swift in Sources */,

@@ -1,33 +1,22 @@
 //
-//  MovieDetailsViewController.swift
+//  MyTabBarController.swift
 //  Rotten Tomatoes
 //
-//  Created by Tianyi Xing on 9/11/15.
+//  Created by Tianyi Xing on 9/13/15.
 //  Copyright © 2015 Tianyi Xing. All rights reserved.
 //
 
 import UIKit
 
-class MovieDetailsViewController: UIViewController {
+class MyTabBarController: UITabBarController {
 
-  @IBOutlet weak var navBar: UINavigationItem!
-  @IBOutlet weak var imageView: UIImageView!
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var synopsisLabel: UILabel!
-  
-  var movie: NSDictionary!
-  
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      titleLabel.text = movie["title"] as? String
-      synopsisLabel.text = movie["synopsis"] as? String
-      
-      let url = NSURL(string: movie.valueForKeyPath("posters.thumbnail") as! String)!
-      imageView.setImageWithURL(url)
-
-      navBar.title = movie["title"] as? String
         
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor = UIColor.orangeColor()
+
+
         // Do any additional setup after loading the view.
     }
 

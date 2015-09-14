@@ -14,10 +14,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="VIm-zW-FTW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="0.58197206440000004" green="0.58197206440000004" blue="0.58197206440000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="93" id="NUg-W8-Qk3" customClass="MovieCell" customModule="Rotten_Tomatoes" customModuleProvider="target">
@@ -70,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419" y="596"/>
+            <point key="canvasLocation" x="1386" y="596"/>
         </scene>
         <!--DVDs-->
         <scene sceneID="cew-7H-RWi">
@@ -81,13 +81,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" id="fZg-PQ-tLO">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DvdCell" rowHeight="93" id="BGG-VY-dN7" customClass="DvdCell" customModule="Rotten_Tomatoes" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DvdCell" rowHeight="93" id="BGG-VY-dN7" customClass="DvdCell" customModule="Rotten_Tomatoes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="320" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BGG-VY-dN7" id="KMP-2i-ahK">
@@ -128,7 +128,6 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="DVDs" id="991-Kc-QZ5"/>
                     <connections>
@@ -137,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mp9-RN-xXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419" y="1245"/>
+            <point key="canvasLocation" x="1386" y="1245"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="CLn-HM-uYv">
@@ -185,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGd-tR-YYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="596"/>
+            <point key="canvasLocation" x="1766" y="596"/>
         </scene>
         <!--Movies-->
         <scene sceneID="leq-tJ-QSR">
@@ -206,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="1003" y="596"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar Controller-->
         <scene sceneID="5Pf-tH-8Kn">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bdk-H5-Mh7" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bdk-H5-Mh7" customClass="MyTabBarController" customModule="Rotten_Tomatoes" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <keyCommands/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3jj-G5-fgO">
@@ -228,7 +227,7 @@
         <!--DVDs-->
         <scene sceneID="5yr-dh-LxB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RQo-td-1ij" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RQo-td-1ij" customClass="NavigationController" customModule="Rotten_Tomatoes" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="DVDs" image="iconmonstr-disc-14-icon-32.png" id="TLG-ux-CXZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lak-hr-pN6">
