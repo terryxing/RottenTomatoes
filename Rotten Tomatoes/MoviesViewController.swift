@@ -98,12 +98,21 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(self.refreshControl)
         
+        
+       // self.searchBar.resignFirstResponder()
+
+        
       }
   
      }
  
-  
-  
+//    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+//    {
+//        return true;
+//    }
+    
+    
+    
   func tableView(tableView: UITableView,
     willDisplayCell cell: UITableViewCell,
     forRowAtIndexPath indexPath: NSIndexPath) {
