@@ -26,6 +26,11 @@ class MovieDetailsViewController: UIViewController {
         
       var url = movie.valueForKeyPath("posters.thumbnail") as! String
         
+      let urlOld = NSURL(string: url)
+       imageView.setImageWithURL(urlOld!)
+
+        
+        
       var range = url.rangeOfString(".*cloudfront.net/", options: .RegularExpressionSearch)
       if let range = range {
             url = url.stringByReplacingCharactersInRange(range, withString: "https://content6.flixster.com/")
