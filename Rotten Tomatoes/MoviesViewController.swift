@@ -42,8 +42,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
       searchBar.tintColor = UIColor.orangeColor()
         
       
-      self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
-      self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+//      self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+//      self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
       
       tableView.dataSource = self
       tableView.delegate = self
