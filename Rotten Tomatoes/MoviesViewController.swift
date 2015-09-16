@@ -185,6 +185,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             return filtered.count
         } else {
             
+            
+            
+            
             if let movies = movies {
                 return movies.count
             } else {
