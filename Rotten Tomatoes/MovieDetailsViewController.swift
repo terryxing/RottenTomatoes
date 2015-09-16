@@ -23,8 +23,24 @@ class MovieDetailsViewController: UIViewController {
       titleLabel.text = movie["title"] as? String
       synopsisLabel.text = movie["synopsis"] as? String
       
-      let url = NSURL(string: movie.valueForKeyPath("posters.thumbnail") as! String)!
-      imageView.setImageWithURL(url)
+        
+      var url = movie.valueForKeyPath("posters.thumbnail") as! String
+        
+      let urlOld = NSURL(string: url)
+       imageView.setImageWithURL(urlOld!)
+
+        
+        
+      var range = url.rangeOfString(".*cloudfront.net/", options: .RegularExpressionSearch)
+      if let range = range {
+            url = url.stringByReplacingCharactersInRange(range, withString: "https://content6.flixster.com/")
+        }
+        
+       
+      let urlNew = NSURL(string: url)
+        
+//      let url = NSURL(string: movie.valueForKeyPath("posters.thumbnail") as! String)!
+      imageView.setImageWithURL(urlNew!)
 
       navBar.title = movie["title"] as? String
         
