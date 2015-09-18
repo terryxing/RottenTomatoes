@@ -8,21 +8,25 @@
 
 import UIKit
 
-class MovieDetailsViewController: UIViewController {
+class MovieDetailsViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var synopsisLabel: UILabel!
+    @IBOutlet weak var synopsisLabel: UITextView!
     
     var movie: NSDictionary!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = movie["title"] as? String
-        synopsisLabel.text = movie["synopsis"] as? String
+        synopsisLabel.delegate = self
         
+        titleLabel.text = movie["title"] as? String
+        //synopsisLabel.text = movie["synopsis"] as? String
+        synopsisLabel.text = String(movie["synopsis"])
+        synopsisLabel.editable = false
+        synopsisLabel.scrollEnabled = true
         
         var url = movie.valueForKeyPath("posters.thumbnail") as! String
         
@@ -30,12 +34,10 @@ class MovieDetailsViewController: UIViewController {
         imageView.setImageWithURL(urlOld!)
         
         
-        
-        var range = url.rangeOfString(".*cloudfront.net/", options: .RegularExpressionSearch)
+        let range = url.rangeOfString(".*cloudfront.net/", options: .RegularExpressionSearch)
         if let range = range {
             url = url.stringByReplacingCharactersInRange(range, withString: "https://content6.flixster.com/")
         }
-        
         
         let urlNew = NSURL(string: url)
         

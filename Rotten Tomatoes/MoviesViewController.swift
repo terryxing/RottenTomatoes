@@ -166,15 +166,15 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     func refresh(sender:AnyObject)
     {
         
-        
-        let alert = UIAlertView()
-        alert.title = "Error"
-        alert.message = "No Network Connection"
-        alert.addButtonWithTitle("OK")
-        alert.show()
-        
-        
-        
+//        
+//        let alert = UIAlertView()
+//        alert.title = "Error"
+//        alert.message = "No Network Connection"
+//        alert.addButtonWithTitle("OK")
+//        alert.show()
+//        
+
+        self.tableView.reloadData()        
         self.refreshControl.endRefreshing()
         
     }
