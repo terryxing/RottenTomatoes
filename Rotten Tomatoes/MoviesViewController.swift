@@ -49,8 +49,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
         searchBar.delegate = self
         
-        let url = NSURL(string: "https://gist.githubusercontent.com/timothy1ee/e41513a57049e21bc6cf/raw/b490e79be2d21818f28614ec933d5d8f467f0a66/gistfile1.json")!
+//        let url = NSURL(string: "https://gist.githubusercontent.com/timothy1ee/e41513a57049e21bc6cf/raw/b490e79be2d21818f28614ec933d5d8f467f0a66/gistfile1.json")!
         
+        let url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=f2fk8pundhpxf77fscxvkupy")!
         
         let request = NSURLRequest(URL: url)
         
@@ -208,7 +209,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     
-    
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         searchActive = true;
     }
@@ -242,6 +242,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             
         }
         self.tableView.reloadData()
+    }
+    
+  
+    
+    func textFieldShouldReturn(searchBar: UISearchBar!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        searchBar.resignFirstResponder()
+        return true;
     }
     
     
